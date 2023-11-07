@@ -2,7 +2,7 @@ function initPage() {
     setMenus();
 }
 
-
+function setMenus() {
     $("#menu_about").click(function() {        
         setContent("#mainContents", "about.html");
     });
