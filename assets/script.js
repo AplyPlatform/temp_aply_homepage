@@ -1,33 +1,22 @@
-
-
-
 function initPage() {
     setMenus();
 }
 
-function setMenus() {
-    $("#menu_main").click(function() {        
-        setContent("#mainContents", "main.html");
-    });
 
     $("#menu_about").click(function() {        
         setContent("#mainContents", "about.html");
     });
 
-    $("#menu_history").click(function() {        
-        setContent("#mainContents", "history.html");
+    $("#menu_service").click(function() {        
+        setContent("#mainContents", "service.html");
     });
 
     $("#menu_team").click(function() {        
         setContent("#mainContents", "team.html");
     });
 
-    $("#menu_location").click(function() {        
-        setContent("#mainContents", "location.html");
-    });
-
-    $("#menu_recruit").click(function() {        
-        setContent("#mainContents", "recruit.html");
+    $("#menu_contact").click(function() {        
+        setContent("#mainContents", "contact.html");
     });
 }
 
