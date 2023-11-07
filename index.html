@@ -88,7 +88,7 @@
     <div id="mainContents" class="main-container">
       <section class="bg-dark text-white height-70" data-jarallax data-speed="0.2">
         <img alt="Image" src="assets/img/main/top.jpg" class="bg-image opacity-70 jarallax-img" />
-        <div class="container">
+        <div class="container align-self-end">
           <div class="row">
             <div class="col-12">
               <h1 class="display-4 text-center font-weight-bold" data-aos="fade-up" data-aos-delay="30">기술을 일상으로</h1>
@@ -105,48 +105,40 @@
     <!-- footer (고정됨) -->
     <footer class="bg-gray text-light footer-long">
       <div class="container">
-        <div class="row">
-          <div class="col-md-3">
-            <p class="text-white"><b>APLY Inc.</b></p>
-            <p>6F, 24-21, Geumbit-ro, Paju-si, Gyeonggi-do, Republic of Korea</p>
-            <hr />
-            <p><a href="mailto:contactus@aply.biz">contactus@aply.biz</a></p>
-            <p>
-              <select id="selSites" class="select" style="background-color: #333; color: #aaa; border-color: #888;" onChange="changedSelector">
-                <option selected>Family sites</option>
-                <option value="recruit">RECRUIT</option>
-                <option value="blog">BLOG</option>
-                <option value="aplx">APLX</option>
-                <option value="kiosk">R&D KIOSK</option>
-                <option value="catchme">CATCHME</option>
-              </select>
-            </p>
-            <ul class="list-unstyled">
-              <li>
-                <a href="https://www.instagram.com/aplyplatform"><i class="fab fa-instagram"></i></a>
-              </li>
-              <li>
-                <a href="https://www.facebook.com/APLYPLATFORM"><i class="fab fa-facebook-f"></i></a>
-              </li>
-              <li>
-                <a href="https://kr.linkedin.com/company/aplyplatform" target=_new><i class="fab fa-linkedin"></i></a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-12">
-            <div class="copyright">
-              <p>©
-                <script>
-                  var cYear = (new Date()).getFullYear();
-                  document.write(cYear);
-                </script>
-                APLY Inc.
-              </p>
+        <div class="row justify-content-center align-items-center">
+          <div class="col-4">
+            <div class="row">
+              <div class="col-sm-3"><a href="//blog.naver.com/PostList.naver?blogId=jebo78&categoryNo=38&from=postList" target="_blank">블로그</a></div>
+              <div class="col-sm-3"><a href="recruit/index.html" target="_blank">채용</a></div>
+              <div class="col-sm-6 text-white-50"><a href="javascript:showEmailPolicyDialog();">이메일무단수집거부</a></div>
             </div>
           </div>
-        </div>
+          <div class="col-8 text-right">
+            <span>
+              <a href="https://www.instagram.com/aplyplatform" target="_blank" class="list-inline-item mr-3"><i class="fab fa-instagram lead"></i></a>
+            </span>
+            <span>
+              <a href="https://www.facebook.com/APLYPLATFORM" target="_blank" class="list-inline-item mr-3"><i class="fab fa-facebook-f lead"></i></a>
+            <span>
+              <a href="https://kr.linkedin.com/company/aplyplatform" target="_blank" class="list-inline-item mr-3"><i class="fab fa-linkedin lead"></i></a>
+            </span>
+            <span>
+              <select id="selSites" class="list-inline-item" style="background-color:#F1F1F1; color:#000; border-color:#000; padding:0.5rem" onChange="changedSelector">
+                <option selected>관련 사이트 <i class="fas fa-plus"></i></option>
+                <option value="aplx">APLX</option>
+                <option value="kiosk">AQR</option>
+                <option value="kiosk">AQR 플레이트</option>
+              </select>
+            </span>
+          </div> 
+        </div>  
+        <div class="border-top border-dark pb-3 mt-3"></div>
+        <div class="row">  
+          <div class="col-12">
+            <p class="text-center font-weight-light">© APLY Inc.</p>
+          </div>
+        </div>  
+      </div>  
     </footer>
 
     <!-- Required vendor scripts (Do not remove) -->
