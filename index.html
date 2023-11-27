@@ -53,9 +53,14 @@
     <!-- Template core CSS-->
     <link rel="stylesheet" href="assets/css/vendor.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
+    <style>
+      .grecaptcha-badge {visibility: hidden;}
+    </style>
   </head>
   
   <body>
+    <script src='https://www.google.com/recaptcha/api.js?render=6LfPn_UUAAAAAN-EHnm2kRY9dUT8aTvIcfrvxGy7'></script>
+    
     <!-- header -->
     <header class="header-sticky header-dark">
       <div class="container">
@@ -151,7 +156,7 @@
               </ul>
             </div>
             <div class="col-md-4">
-              <h2 class="h1">Find the right <br><b>company</b> for you.</h2>
+              <h2 class="h1">Meet the right <br><b>company</b> for you.</h2>
               <p class="lead">어플라이 팀원의 역량이</p>
               <div class="btn btn-lg btn-dark" data-aos="fade-up" data-aos-delay="50">지금 문의하세요.</div>
             </div>
@@ -178,7 +183,7 @@
       </section>
       
       <!-- 문의하기 폼 -->
-      <section class="bg-light pt-8 pb-8" data-top-top="transform: translateY(0px);" data-top-bottom="transform: translateY(200px);">
+      <section class="bg-light pt-10 pb-10" data-top-top="transform: translateY(0px);" data-top-bottom="transform: translateY(200px);">
         <div class="container">
           <form role="form" method="post" id="email_up">
             <div class="row mb-8">
@@ -301,7 +306,7 @@
     <div class="modal fade" id="modal-1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
-          <div class="modal-header">
+          <div class="modal-header pb-0">
             <h5 class="modal-title">(주)어플라이 이메일무단수집거부</h5>
             <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="icon-cancel"></i></span></button>
           </div>
