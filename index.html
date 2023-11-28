@@ -180,6 +180,89 @@
           </div>
         </div>
       </section>
+
+      <!-- 채용 문의 -->
+      <section class="module" id="recruit-section">
+        <div class="container">
+            <form role="form" method="post" id="recruit_form">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="form-group">
+                            <div class="form-control" style="padding-bottom:.05rem;">
+                                <div class="row">
+                                    <div class="col-lg-12 p-b-10"><label class="lab_check" for="">관심 직군</label>
+                                    </div>
+                                    <div class="col-lg-2 p-b-10">
+                                      <input type="checkbox" name="min_type_1" id="m_1" value="SW개발">
+                                      <label class="lab_check" for="m_1"><span class="checkbox"></span> SW개발</label>
+                                    </div>
+                                    <div class="col-lg-2 p-b-10">
+                                      <input type="checkbox" name="min_type_2" id="m_2" value="데이터 분석">
+                                      <label class="lab_check" for="m_2"><span class="checkbox"></span> 데이터 분석</label>
+                                    </div>
+                                    <div class="col-lg-2 p-b-10">
+                                      <input type="checkbox" name="min_type_3" id="m_3" value="제작">
+                                      <label class="lab_check" for="m_3"><span class="checkbox"></span> HW개발</label>
+                                    </div>
+                                    <div class="col-lg-2 p-b-10">
+                                      <input type="checkbox" name="min_type_4" id="m_4" value="체험">
+                                      <label class="lab_check" for="m_4"><span class="checkbox"></span> 마케팅</label>
+                                    </div>
+                                    <div class="col-lg-2 p-b-10">
+                                      <input type="checkbox" name="min_type_5" id="m_5" value="체험">
+                                      <label class="lab_check" for="m_5"><span class="checkbox"></span> 디자인</label>
+                                    </div>
+                                    <div class="col-lg-2 p-b-10">
+                                      <input type="checkbox"  name="min_type_6" id="m_6" value="체험">
+                                      <label class="lab_check" for="m_6"><span class="checkbox"></span> 기획</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="help-block text-danger"></p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="form-group">
+                            <input class="form-control" type="text" name="form_name" placeholder="이름"
+                                required="">
+                            <p class="help-block text-danger"></p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="form-group">
+                            <input class="form-control" type="text" name="form_phone"
+                                placeholder="전화번호(-없이 입력해주세요)" required="" pattern="\d+">
+                            <p class="help-block text-danger"></p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="form-group">
+                            <input class="form-control" type="text" name="form_email"
+                                placeholder="이메일 주소" required="">
+                            <p class="help-block text-danger"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center mb-2">
+                    <div class="col-md-4">                  
+                        <button class="btn btn-primary btn-block" id="recruit_form_send">연락처 남기기</button>
+                    </div>
+                </div>
+                <div class="row justify-content-center mb-2">
+                    <div class="col-md-12">
+                        <p><input type="checkbox" name="agree_1" id="recruit_agree_1" value="제공"><label class="lab_check" for="recruit_agree_1"><span class="checkbox"></span> <a
+                                    href="javascript:showPrivacyDialog();">개인정보 처리방침</a> 동의 <span
+                                    class="required">(필수)</span></label></p>
+                        <hr class="m-b-30 m-t-30">
+                        
+                        <input type="hidden" name="form_token">
+                        <input type="hidden" name="form_kind" value="recruit">
+                        <p class="text-center m-t-30">연락처를 남겨주시면 채용계획 발생시 연락 드리겠습니다.</p>
+                    </div>
+                </div>
+            </form>
+        </div>
+      </section>
       
       <!-- 문의하기 폼 -->
       <section class="bg-light pt-10 pb-10" data-top-top="transform: translateY(0px);" data-top-bottom="transform: translateY(200px);">
@@ -193,23 +276,23 @@
              </div>  
              <div class="row justify-content-center mb-2">
                <div class="col-lg-2 mb-1">
-                 <input type="checkbox" id="min_type_1" name="min_type_1" value="SW 개발">
-                 <label class="lab_check" for="min_type_1"><span class="checkbox" style="margin-bottom:0.375rem;"></span></label>
+                 <input type="checkbox" name="min_type_1" id="mi_1" value="SW 개발">
+                 <label class="lab_check" for="mi_1"><span class="checkbox" style="margin-bottom:0.375rem;"></span></label>
                  <span>제휴 및 협업</span>
                </div>
                <div class="col-lg-2 mb-1">
-                 <input type="checkbox" id="min_type_2" name="min_type_2" value="데이터 분석">
-                 <label class="lab_check" for="min_type_2"><span class="checkbox" style="margin-bottom:0.375rem;"></span></label>
+                 <input type="checkbox" name="min_type_2" id="mi_2" value="데이터 분석">
+                 <label class="lab_check" for="mi_2"><span class="checkbox" style="margin-bottom:0.375rem;"></span></label>
                  <span>서비스 관련</span>
                </div>
                <div class="col-lg-2 mb-1">
-                 <input type="checkbox" id="min_type_3" name="min_type_3" value="HW 개발">
-                 <label class="lab_check" for="min_type_3"><span class="checkbox" style="margin-bottom:0.375rem;"></span></label>
+                 <input type="checkbox" name="min_type_3" id="mi_3" value="HW 개발">
+                 <label class="lab_check" for="mi_3"><span class="checkbox" style="margin-bottom:0.375rem;"></span></label>
                  <span>SW 개발</span>
                </div>
                <div class="col-lg-2">
-                 <input type="checkbox" id="min_type_4" name="min_type_4" value="마케팅">
-                 <label class="lab_check" for="min_type_4"><span class="checkbox" style="margin-bottom:0.375rem;"></span></label>
+                 <input type="checkbox" name="min_type_4" id="mi_4" value="마케팅">
+                 <label class="lab_check" for="mi_4"><span class="checkbox" style="margin-bottom:0.375rem;"></span></label>
                  <span>기타</span>
                </div>                                        
                <p class="help-block text-danger"></p>
@@ -217,30 +300,30 @@
              <div class="row justify-content-center mb-4">
                <div class="col-lg-3">
                  <div class="form-group">
-                   <input class="form-control" type="text" name="form_name" id="form_name" placeholder="이름" required=""> <p class="help-block text-danger"></p>
+                   <input class="form-control" type="text" name="form_name" placeholder="이름" required=""> <p class="help-block text-danger"></p>
                  </div>
                </div>
                <div class="col-lg-3">
                  <div class="form-group">
-                   <input class="form-control" type="text" name="form_phone" id="form_phone" placeholder="전화번호(-없이 입력해주세요)" required="" pattern="\d+"> <p class="help-block text-danger"></p>
+                   <input class="form-control" type="text" name="form_phone" placeholder="전화번호(-없이 입력해주세요)" required="" pattern="\d+"> <p class="help-block text-danger"></p>
                  </div>
                </div>
                <div class="col-lg-3">
                  <div class="form-group">
-                   <input class="form-control" type="text" name="form_email" id="form_email" placeholder="이메일 주소" required=""> <p class="help-block text-danger"></p>
+                   <input class="form-control" type="text" name="form_email" placeholder="이메일 주소" required=""> <p class="help-block text-danger"></p>
                  </div>
                </div>
 
                <div class="col-md-9">
                  <div class="form-group">
-                   <textarea class="form-control" name="form_content" id="form_content" rows="7" placeholder="문의 내용" required=""></textarea>
+                   <textarea class="form-control" name="form_content" rows="7" placeholder="문의 내용" required=""></textarea>
                    <p class="help-block text-danger"></p>
                  </div>
                </div>
 
                <div class="col-md-9 text-center">
                  <div class="form-group">
-                   <input type="checkbox" name="agree_1" id="agree_1" value="제공">
+                   <input type="checkbox" name="agree_1" value="제공">
                    <label class="lab_check" for="agree_1"><span class="checkbox"></span></label>
                    <a href="javascript:showPrivacyDialog();">개인정보 처리방침</a> 동의 <span class="required">(필수)</span>
                  </div>
@@ -257,8 +340,8 @@
                  <a href='https://policies.google.com/privacy' style='color:#333;' target='_blank'>개인 정보 보호 정책</a> 및 
                  <a href='https://policies.google.com/terms' style='color:#333;' target='_blank'>서비스 약관</a>이 적용됩니다.</a>
                </div>
-                <input type="hidden" name="form_token" id="form_token">
-                <input name="form_kind" id="form_kind" type="hidden" value="aplycontact">
+              <input type="hidden" name="form_token">
+              <input type="hidden" name="form_kind" value="aplycontact">
               </div>
             </div>
           </form>
