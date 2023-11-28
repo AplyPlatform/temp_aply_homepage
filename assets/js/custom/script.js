@@ -43,6 +43,9 @@ function setMenus() {
     $("#menu_contact").click(function() {        
         setContent("#mainContents", "contact.html");
     });
+     $("#menu_recruit").click(function() {        
+        setContent("#mainContents", "recruit.html");
+    });
 }
 
 async function setContent(targetId, templateName) {
