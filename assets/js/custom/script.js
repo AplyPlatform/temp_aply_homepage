@@ -10,6 +10,7 @@ let pageFileTable = {
 let isRecaptchaInit = false;
 
 $(function() {
+	window.scrollTo({ top: 0, behavior: 'smooth' });
     initPage();
 });
 
