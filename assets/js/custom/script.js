@@ -10,18 +10,23 @@ let pageFileTable = {
 let isRecaptchaInit = false;
 
 $(function() {	
-	setTimeout(() => {
-		window.scrollTo({ top: 0, behavior: 'smooth' });
-	}, 100);
     initPage();
 });
 
-function initPage() {
-	let currentPage = "main";
 
-	let myUrl = new URL(window.location.href);	
-	if (myUrl.hash != "") currentPage = myUrl.hash.replace("#", "");
-	
+function checkParam() {
+    const queryString = window.location.search;
+    const urlParams = new URLSearchParams(queryString);    
+	let p_id = urlParams.get('p');
+
+	if (!isSet(p_id)) p_id = "main";
+
+    return p_id;
+}
+
+
+function initPage() {
+	let currentPage = checkParam();	
 	let pageFile = getPageFile(currentPage);
 	if (pageFile == undefined) pageFile = "main.html";
 	setContent("#mainContents", pageFile);
@@ -53,26 +58,27 @@ function getPageFile(pageName) {
 
 function setMenus() {
     $("#menu_main").click(function() {        
-        setContent("#mainContents", "main.html");
+        location.href = "?p=main";
     });    
     
-    $("#menu_about").click(function() {        
-        setContent("#mainContents", "about.html");
+    $("#menu_about").click(function() {                
+		location.href = "?p=about";
     });
 
-    $("#menu_service").click(function() {        
-        setContent("#mainContents", "service.html");
+    $("#menu_service").click(function() {		
+        location.href = "?p=service";
     });
 
     $("#menu_team").click(function() {        
-        setContent("#mainContents", "team.html");
+		location.href = "?p=team";
     });
 
-    $("#menu_contact").click(function() {        
-        setContent("#mainContents", "contact.html");
+    $("#menu_contact").click(function() {
+		location.href = "?p=contact";        
     });
-     $("#menu_recruit").click(function() {        
-        setContent("#mainContents", "recruit.html");
+
+    $("#menu_recruit").click(function() {
+		location.href = "?p=recruit";        
     });
 }
 
