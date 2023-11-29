@@ -15213,15 +15213,13 @@ body {
     bottom: -60vw;
     left: 80vw; } }
 
-body > section,
-body > footer {
+body > section, body > footer {
   position: relative;
   margin: 0 auto;
   padding: 6.25rem 0;
   overflow: hidden; }
 
-body [class*="container"] .row:not(:last-child) {
-  margin-bottom: 3.125rem; }
+body [class*="container"] .row:not(:last-child) {margin-bottom: 3.125rem; }
 
 @media (max-width: 767.98px) {
   body > section,
@@ -15281,8 +15279,8 @@ body [class*="container"] .row:not(:last-child) {
       height: 100%; }
 
 @media (max-width: 767.98px) {
-  .split-background {
-    position: static; } }
+  .split-background {position: static; }
+  }
 
 .overlay::before {
   position: absolute;
@@ -15296,11 +15294,9 @@ body [class*="container"] .row:not(:last-child) {
   opacity: .8;
   z-index: 10; }
 
-section[class*="large"] {
-  padding: 9.375rem 0; }
+section[class*="large"] {padding: 9.375rem 0; }
 
-section[class*="small"] {
-  padding: 4.16667rem 0; }
+section[class*="small"] {padding: 4.16667rem 0; }
 
 [class*="separator"] {
   border-width: 0;
@@ -15318,11 +15314,9 @@ section[class*="small"] {
 .text-white [class*="separator"], .text-white[class*="separator"] {
   border-color: rgba(255, 255, 255, 0.1); }
 
-.section-decorated-top {
-  padding-top: 9.375rem; }
+.section-decorated-top {padding-top: 9.375rem; }
 
-.section-decorated-bottom {
-  padding-bottom: 9.375rem; }
+.section-decorated-bottom {padding-bottom: 9.375rem; }
 
 .decorated-top {
   position: absolute;
@@ -15372,12 +15366,9 @@ section[class*="small"] {
     .decorated-bottom {
       height: 20px; } }
 
-.decorated-sm {
-  height: 20px; }
+.decorated-sm {height: 20px; }
 
-.viewport {
-  position: relative;
-  overflow: hidden; }
+.viewport {position: relative; overflow: hidden; }
 
 .circle {
   position: absolute;
@@ -15396,9 +15387,8 @@ section[class*="small"] {
   background: rgba(0, 0, 0, 0.1); }
 
 @media (min-width: 1600px) {
-  body > section,
-  body > footer {
-    padding: 7.5rem 0; } }
+  body > section, body > footer {padding: 7.5rem 0; }
+  }
 
 @media (max-width: 1199.98px) {
   .container > .row > *:not(:last-child),
@@ -15406,11 +15396,9 @@ section[class*="small"] {
   .container-full > .row > *:not(:last-child) {
     margin-bottom: 1.875rem; } }
 
-.logo-sm {
-  max-height: 2rem; }
+.logo-sm {max-height: 2rem; }
 
-img {
-  max-width: 100%; }
+img {max-width: 100%; }
 
 .anchor {
   -webkit-transition: all 0.2s;
@@ -15437,8 +15425,7 @@ img {
     .anchor:hover i {
       color: #fff; }
 
-#typed-strings {
-  display: none; }
+#typed-strings {display: none; }
 
 .socials {
   -webkit-transition: all 0.2s;

@@ -1,4 +1,5 @@
 let pageFileTable = {
+	"main" : "main.html",
 	"about" : "about.html",
 	"service" : "service.html",
 	"team" : "team.html",
@@ -13,13 +14,13 @@ $(function() {
 });
 
 function initPage() {
-	let currentPage = "about";
+	let currentPage = "main";
 
 	let myUrl = new URL(window.location.href);	
 	if (myUrl.hash != "") currentPage = myUrl.hash.replace("#", "");
 	
 	let pageFile = getPageFile(currentPage);
-	if (pageFile == undefined) pageFile = "about.html";
+	if (pageFile == undefined) pageFile = "main.html";
 	setContent("#mainContents", pageFile);
     setMenus();
     setEmailContact();
@@ -48,6 +49,10 @@ function getPageFile(pageName) {
 }
 
 function setMenus() {
+    $("#menu_main").click(function() {        
+        setContent("#mainContents", "main.html");
+    });    
+    
     $("#menu_about").click(function() {        
         setContent("#mainContents", "about.html");
     });

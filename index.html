@@ -64,7 +64,7 @@
     <header class="header-sticky header-dark">
       <div class="container">
         <nav class="navbar navbar-expand-lg navbar-dark">
-          <a class="navbar-brand" href="index.html">
+          <a class="navbar-brand" id="menu_main" href="#main">
             <img class="navbar-logo navbar-logo-light" src="assets/img/logo_white.png" style="width:75px;" alt="APLY" />
             <img class="navbar-logo navbar-logo-dark" src="assets/img/logo.png" style="width:75px;" alt="APLY" />
           </a>
@@ -72,10 +72,10 @@
 
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav align-items-center mr-auto">
-              <li class="nav-item" id="menu_about"><a href="#" class="nav-link">회사소개</a></li>
-              <li class="nav-item" id="menu_service"><a href="#" class="nav-link">서비스</a></li>
-              <li class="nav-item" id="menu_team"><a href="#" class="nav-link">팀</a></li>
-              <li class="nav-item" id="menu_contact"><a href="#" class="nav-link">문의</a></li>
+              <li class="nav-item" id="menu_about"><a href="#about" class="nav-link">회사소개</a></li>
+              <li class="nav-item" id="menu_service"><a href="#service" class="nav-link">서비스</a></li>
+              <li class="nav-item" id="menu_team"><a href="#team" class="nav-link">팀</a></li>
+              <li class="nav-item" id="menu_contact"><a href="#contact" class="nav-link">문의</a></li>
             </ul>
           </div>
         </nav>
@@ -84,190 +84,7 @@
     <!-- / header -->
         
     <!-- main contents (JS코드로 변경됨) -->
-    <div id="mainContents" class="main-container">
-    
-      <!-- cover -->     
-      <section class="p-0" data-top-top="transform: translateY(0px);" data-top-bottom="transform: translateY(200px);">
-        <div class="swiper-container text-white">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide vh-90">
-              <div class="image image-overlay image-zoom" style="background-image:url(assets/img/main/top.jpg)"></div>
-              <div class="caption">
-                <div class="container">
-                  <div class="row align-items-end justify-content-center vh-90">
-                    <div class="col-12 col-lg-6 text-center" data-swiper-parallax-y="-100%">
-                      <h1 class="display-1 mb-2 font-weight-bold ">기술을 일상으로</h1>
-                      <p class="lead mb-10 text-white">나의 일상에 어플라이가 함께 합니다.</p>
-                      <div class="mouse"></div>
-                    </div>
-                  </div>
-                </div>  
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- / cover -->
-      
-      <section class="bg-white pt-4 pb-4 separator-bottom" data-top-top="transform: translateY(0px);" data-top-bottom="transform: translateY(200px);">
-        <div class="container">
-          <div class="row justify-content-center">
-            <div class="col-md-10 col-lg-8">
-              <h3 class="text-decorated text-decorated--padding">advanced platform to fly,<br />APLY will be the path to the next.</h3>
-            </div>
-          </div>
-        </div>
-      </section>
-      
-      <!-- 역량 -->
-      <section class="bg-light pt-4 pb-4" data-top-top="transform: translateY(0px);" data-top-bottom="transform: translateY(200px);">
-        <div class="container">
-          <div class="row align-items-center justify-content-between">
-            <div class="col-md-8">
-              <ul class="masonry gallery row gutter-1">
-                <li class="col-6" data-aos="zoom-in">
-                  <figure class="photo equal equal-double">
-                    <a href="../../assets/images/demo/hotel/hotel-2.jpg" style="background-image: url(../../assets/images/demo/hotel/hotel-2.jpg);">
-                      <span class="photo-caption">
-                        <span>Photo Caption</span>
-                      </span>
-                    </a>
-                  </figure>
-                </li>
-                <li class="col-6" data-aos="zoom-in">
-                  <figure class="photo equal">
-                    <a href="../../assets/images/demo/hotel/hotel-3.jpg" style="background-image: url(../../assets/images/demo/hotel/hotel-3.jpg);">
-                      <span class="photo-caption">
-                        <span>Photo Caption</span>
-                      </span>
-                    </a>
-                  </figure>
-                </li>
-                <li class="col-6" data-aos="zoom-in">
-                  <figure class="photo equal">
-                    <a href="../../assets/images/demo/hotel/hotel-4.jpg" style="background-image: url(../../assets/images/demo/hotel/hotel-4.jpg);">
-                      <span class="photo-caption">
-                        <span>Photo Caption</span>
-                      </span>
-                    </a>
-                  </figure>
-                </li>
-              </ul>
-            </div>
-            <div class="col-md-4">
-              <h2 class="h1">Meet the right <br><b>company</b> for you.</h2>
-              <p class="lead">어플라이 팀원의 역량이</p>
-              <div class="btn btn-lg btn-dark" data-aos="fade-up" data-aos-delay="50">지금 문의하세요.</div>
-            </div>
-          </div>         
-        </div>
-      </section>
-      <!-- / 역량 소개 -->   
-      
-      <!-- 서비스 소개 -->
-      <section class="bg-light pt-4 pb-4" data-top-top="transform: translateY(0px);" data-top-bottom="transform: translateY(200px);">
-        <div class="container">
-          <div class="row">
-          </div>
-        </div>
-      </section>
-      
-      <!-- 회사 소개 -->
-      <section class="bg-white pt-4 pb-4" data-top-top="transform: translateY(0px);" data-top-bottom="transform: translateY(200px);">
-        <div class="container">
-          <div class="row">
-            <div class="btn btn-lg btn-dark" data-aos="fade-up" data-aos-delay="50">채용</div>
-          </div>
-        </div>
-      </section>
-      
-      <!-- 문의하기 폼 -->
-      <section class="bg-light pt-10 pb-10" data-top-top="transform: translateY(0px);" data-top-bottom="transform: translateY(200px);">
-        <div class="container">
-          <form role="form" method="post" id="email_up">
-            <div class="row mb-8">
-              <div class="col-12 text-center">
-                <h4><b>상담 및 문의</b></h4>
-                <p class="lead">어플라이의 도움이 필요하세요? <br />먼저 분야를 선택 후 문의 내용을 작성해주세요.</p>
-              </div>
-            </div>  
-            <div class="row justify-content-center mb-2">
-              <div class="col-lg-2 mb-1">
-                 <input type="checkbox" name="min_type_1" id="mi_1" value="SW 개발">
-                 <label class="lab_check" for="mi_1"><span class="checkbox" style="margin-bottom:0.375rem;"></span></label>
-                 <span>제휴 및 협업</span>
-              </div>
-              <div class="col-lg-2 mb-1">
-                 <input type="checkbox" name="min_type_2" id="mi_2" value="데이터 분석">
-                 <label class="lab_check" for="mi_2"><span class="checkbox" style="margin-bottom:0.375rem;"></span></label>
-                 <span>서비스 관련</span>
-              </div>
-              <div class="col-lg-2 mb-1">
-                 <input type="checkbox" name="min_type_3" id="mi_3" value="HW 개발">
-                 <label class="lab_check" for="mi_3"><span class="checkbox" style="margin-bottom:0.375rem;"></span></label>
-                 <span>SW 개발</span>
-              </div>
-              <div class="col-lg-2">
-                 <input type="checkbox" name="min_type_4" id="mi_4" value="마케팅">
-                 <label class="lab_check" for="mi_4"><span class="checkbox" style="margin-bottom:0.375rem;"></span></label>
-                 <span>기타</span>
-              </div>                                        
-              <p class="help-block text-danger"></p>
-            </div>
-            <div class="row justify-content-center mb-4">
-              <div class="col-lg-3">
-                <div class="form-group">
-                  <input class="form-control" type="text" name="form_name" placeholder="이름" required=""> 
-                  <p class="help-block text-danger"></p>
-                </div>
-              </div>
-              <div class="col-lg-3">
-                <div class="form-group">
-                  <input class="form-control" type="text" name="form_phone" placeholder="전화번호(-없이 입력해주세요)" required="" pattern="\d+"> 
-                  <p class="help-block text-danger"></p>
-                </div>
-              </div>
-              <div class="col-lg-3">
-                <div class="form-group">
-                  <input class="form-control" type="text" name="form_email" placeholder="이메일 주소" required=""> 
-                  <p class="help-block text-danger"></p>
-                </div>
-              </div>
-
-              <div class="col-md-9">
-                 <div class="form-group">
-                   <textarea class="form-control" name="form_content" rows="7" placeholder="문의 내용" required=""></textarea>
-                   <p class="help-block text-danger"></p>
-                 </div>
-              </div>
-
-              <div class="col-md-9 text-center">
-                 <div class="form-group">
-                   <input type="checkbox" name="agree_1" id="ag_1" value="제공">
-                   <label class="lab_check" for="ag_1"><span class="checkbox"></span></label>
-                   <a href="javascript:showPrivacyDialog();">개인정보 처리방침</a> 동의 <span class="required">(필수)</span>
-                 </div>
-              </div>
-            </div>    
-            <div class="row justify-content-center mb-2">
-              <div class="col-md-4">                  
-                 <button class="btn btn-primary btn-block" id="email_up_send">Send</button>
-              </div>
-            </div>
-            <div class="row justify-content-center mb-6">
-              <div class="col-md-9 fs-14 text-center">                  
-                이 사이트는 reCAPTCHA의 보호를 받으며 Google 
-                <a href='https://policies.google.com/privacy' style='color:#333;' target='_blank'>개인 정보 보호 정책</a> 및 
-                <a href='https://policies.google.com/terms' style='color:#333;' target='_blank'>서비스 약관</a>이 적용됩니다.</a>
-              </div>
-              <input type="hidden" name="form_token">
-              <input type="hidden" name="form_kind" value="aplycontact">
-              </div>
-            </div>
-          </form>
-        </div>
-      </section>
-      <!-- / 문의하기 폼 -->      
+    <div id="mainContents" class="main-container"> 
     </div>
     <!-- end of main contents -->
         
@@ -279,7 +96,7 @@
             <div class="col-md-5 text-center text-md-left">
               <ul class="nav">
                 <li class="nav-item"><a class="nav-link" href="//blog.naver.com/PostList.naver?blogId=jebo78&categoryNo=38&from=postList" target="_blank">블로그</a></li>
-                <li class="nav-item"><a class="nav-link" href="#" id="menu_recruit">채용</a></li>
+                <li class="nav-item"><a class="nav-link" href="#recruit" id="menu_recruit">채용</a></li>
                 <li class="nav-item"><a class="nav-link" href="javascript:showEmailPolicyDialog();">이메일무단수집거부</a></li>
               </ul>
             </div>
