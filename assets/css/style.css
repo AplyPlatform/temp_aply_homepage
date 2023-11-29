@@ -8011,8 +8011,7 @@ button.bg-transparent-black:focus {
     bottom: -2.5rem;
     left: -2.5rem; }
 
-.text-blue {
-  color: #0030AE !important; }
+.text-blue {color: #0030AE !important; }
 
 a.text-blue:hover, a.text-blue:focus {
   color: #001b62 !important; }
@@ -15213,7 +15212,7 @@ body {
     bottom: -60vw;
     left: 80vw; } }
 
-body > section, body > footer {
+section, footer {
   position: relative;
   margin: 0 auto;
   padding: 6.25rem 0;
@@ -15222,11 +15221,9 @@ body > section, body > footer {
 body [class*="container"] .row:not(:last-child) {margin-bottom: 3.125rem; }
 
 @media (max-width: 767.98px) {
-  body > section,
-  body > footer {
-    padding: 3.125rem 0; }
-  body [class*="container"] .row:not(:last-child) {
-    margin-bottom: 2.08333rem; } }
+  section, footer {padding: 3.125rem 0; }
+  body [class*="container"] .row:not(:last-child) {margin-bottom: 2.08333rem; }
+  }
 
 .layers {
   position: relative;
@@ -15387,7 +15384,7 @@ section[class*="small"] {padding: 4.16667rem 0; }
   background: rgba(0, 0, 0, 0.1); }
 
 @media (min-width: 1600px) {
-  body > section, body > footer {padding: 7.5rem 0; }
+  section, footer {padding: 7.5rem 0; }
   }
 
 @media (max-width: 1199.98px) {
