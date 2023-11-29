@@ -87,7 +87,7 @@
     <div id="mainContents" class="main-container">
     
       <!-- cover -->     
-      <section class="p-0" data-top-top="transform: translateY(0px);"  data-top-bottom="transform: translateY(200px);">
+      <section class="p-0" data-top-top="transform: translateY(0px);" data-top-bottom="transform: translateY(200px);">
         <div class="swiper-container text-white">
           <div class="swiper-wrapper">
             <div class="swiper-slide vh-90">
@@ -109,7 +109,7 @@
       </section>
       <!-- / cover -->
       
-      <section class="bg-white pt-4 pb-4 separator-bottom"  data-top-top="transform: translateY(0px);" data-top-bottom="transform: translateY(200px);">
+      <section class="bg-white pt-4 pb-4 separator-bottom" data-top-top="transform: translateY(0px);" data-top-bottom="transform: translateY(200px);">
         <div class="container">
           <div class="row justify-content-center">
             <div class="col-md-10 col-lg-8">
@@ -180,166 +180,86 @@
           </div>
         </div>
       </section>
-
-      <!-- 채용 문의 -->
-      <section class="module" id="recruit-section">
-        <div class="container">
-            <form role="form" method="post" id="recruit_form">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="form-group">
-                            <div class="form-control" style="padding-bottom:.05rem;">
-                                <div class="row">
-                                    <div class="col-lg-12 p-b-10"><label class="lab_check" for="">관심 직군</label>
-                                    </div>
-                                    <div class="col-lg-2 p-b-10">
-                                      <input type="checkbox" name="min_type_1" id="m_1" value="SW개발">
-                                      <label class="lab_check" for="m_1"><span class="checkbox"></span> SW개발</label>
-                                    </div>
-                                    <div class="col-lg-2 p-b-10">
-                                      <input type="checkbox" name="min_type_2" id="m_2" value="데이터 분석">
-                                      <label class="lab_check" for="m_2"><span class="checkbox"></span> 데이터 분석</label>
-                                    </div>
-                                    <div class="col-lg-2 p-b-10">
-                                      <input type="checkbox" name="min_type_3" id="m_3" value="제작">
-                                      <label class="lab_check" for="m_3"><span class="checkbox"></span> HW개발</label>
-                                    </div>
-                                    <div class="col-lg-2 p-b-10">
-                                      <input type="checkbox" name="min_type_4" id="m_4" value="체험">
-                                      <label class="lab_check" for="m_4"><span class="checkbox"></span> 마케팅</label>
-                                    </div>
-                                    <div class="col-lg-2 p-b-10">
-                                      <input type="checkbox" name="min_type_5" id="m_5" value="체험">
-                                      <label class="lab_check" for="m_5"><span class="checkbox"></span> 디자인</label>
-                                    </div>
-                                    <div class="col-lg-2 p-b-10">
-                                      <input type="checkbox"  name="min_type_6" id="m_6" value="체험">
-                                      <label class="lab_check" for="m_6"><span class="checkbox"></span> 기획</label>
-                                    </div>
-                                </div>
-                            </div>
-                            <p class="help-block text-danger"></p>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="form-group">
-                            <input class="form-control" type="text" name="form_name" placeholder="이름"
-                                required="">
-                            <p class="help-block text-danger"></p>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="form-group">
-                            <input class="form-control" type="text" name="form_phone"
-                                placeholder="전화번호(-없이 입력해주세요)" required="" pattern="\d+">
-                            <p class="help-block text-danger"></p>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="form-group">
-                            <input class="form-control" type="text" name="form_email"
-                                placeholder="이메일 주소" required="">
-                            <p class="help-block text-danger"></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="row justify-content-center mb-2">
-                    <div class="col-md-4">                  
-                        <button class="btn btn-primary btn-block" id="recruit_form_send">연락처 남기기</button>
-                    </div>
-                </div>
-                <div class="row justify-content-center mb-2">
-                    <div class="col-md-12">
-                        <p><input type="checkbox" name="agree_1" id="recruit_agree_1" value="제공"><label class="lab_check" for="recruit_agree_1"><span class="checkbox"></span> <a
-                                    href="javascript:showPrivacyDialog();">개인정보 처리방침</a> 동의 <span
-                                    class="required">(필수)</span></label></p>
-                        <hr class="m-b-30 m-t-30">
-                        
-                        <input type="hidden" name="form_token">
-                        <input type="hidden" name="form_kind" value="recruit">
-                        <p class="text-center m-t-30">연락처를 남겨주시면 채용계획 발생시 연락 드리겠습니다.</p>
-                    </div>
-                </div>
-            </form>
-        </div>
-      </section>
       
       <!-- 문의하기 폼 -->
       <section class="bg-light pt-10 pb-10" data-top-top="transform: translateY(0px);" data-top-bottom="transform: translateY(200px);">
         <div class="container">
           <form role="form" method="post" id="email_up">
             <div class="row mb-8">
-               <div class="col-12 text-center">
-                 <h4><b>상담 및 문의</b></h4>
-                 <p class="lead">어플라이의 도움이 필요하세요? <br />먼저 분야를 선택 후 문의 내용을 작성해주세요.</p>
-               </div>
-             </div>  
-             <div class="row justify-content-center mb-2">
-               <div class="col-lg-2 mb-1">
+              <div class="col-12 text-center">
+                <h4><b>상담 및 문의</b></h4>
+                <p class="lead">어플라이의 도움이 필요하세요? <br />먼저 분야를 선택 후 문의 내용을 작성해주세요.</p>
+              </div>
+            </div>  
+            <div class="row justify-content-center mb-2">
+              <div class="col-lg-2 mb-1">
                  <input type="checkbox" name="min_type_1" id="mi_1" value="SW 개발">
                  <label class="lab_check" for="mi_1"><span class="checkbox" style="margin-bottom:0.375rem;"></span></label>
                  <span>제휴 및 협업</span>
-               </div>
-               <div class="col-lg-2 mb-1">
+              </div>
+              <div class="col-lg-2 mb-1">
                  <input type="checkbox" name="min_type_2" id="mi_2" value="데이터 분석">
                  <label class="lab_check" for="mi_2"><span class="checkbox" style="margin-bottom:0.375rem;"></span></label>
                  <span>서비스 관련</span>
-               </div>
-               <div class="col-lg-2 mb-1">
+              </div>
+              <div class="col-lg-2 mb-1">
                  <input type="checkbox" name="min_type_3" id="mi_3" value="HW 개발">
                  <label class="lab_check" for="mi_3"><span class="checkbox" style="margin-bottom:0.375rem;"></span></label>
                  <span>SW 개발</span>
-               </div>
-               <div class="col-lg-2">
+              </div>
+              <div class="col-lg-2">
                  <input type="checkbox" name="min_type_4" id="mi_4" value="마케팅">
                  <label class="lab_check" for="mi_4"><span class="checkbox" style="margin-bottom:0.375rem;"></span></label>
                  <span>기타</span>
-               </div>                                        
-               <p class="help-block text-danger"></p>
-             </div>
-             <div class="row justify-content-center mb-4">
-               <div class="col-lg-3">
-                 <div class="form-group">
-                   <input class="form-control" type="text" name="form_name" placeholder="이름" required=""> <p class="help-block text-danger"></p>
-                 </div>
-               </div>
-               <div class="col-lg-3">
-                 <div class="form-group">
-                   <input class="form-control" type="text" name="form_phone" placeholder="전화번호(-없이 입력해주세요)" required="" pattern="\d+"> <p class="help-block text-danger"></p>
-                 </div>
-               </div>
-               <div class="col-lg-3">
-                 <div class="form-group">
-                   <input class="form-control" type="text" name="form_email" placeholder="이메일 주소" required=""> <p class="help-block text-danger"></p>
-                 </div>
-               </div>
+              </div>                                        
+              <p class="help-block text-danger"></p>
+            </div>
+            <div class="row justify-content-center mb-4">
+              <div class="col-lg-3">
+                <div class="form-group">
+                  <input class="form-control" type="text" name="form_name" placeholder="이름" required=""> 
+                  <p class="help-block text-danger"></p>
+                </div>
+              </div>
+              <div class="col-lg-3">
+                <div class="form-group">
+                  <input class="form-control" type="text" name="form_phone" placeholder="전화번호(-없이 입력해주세요)" required="" pattern="\d+"> 
+                  <p class="help-block text-danger"></p>
+                </div>
+              </div>
+              <div class="col-lg-3">
+                <div class="form-group">
+                  <input class="form-control" type="text" name="form_email" placeholder="이메일 주소" required=""> 
+                  <p class="help-block text-danger"></p>
+                </div>
+              </div>
 
-               <div class="col-md-9">
+              <div class="col-md-9">
                  <div class="form-group">
                    <textarea class="form-control" name="form_content" rows="7" placeholder="문의 내용" required=""></textarea>
                    <p class="help-block text-danger"></p>
                  </div>
-               </div>
+              </div>
 
-               <div class="col-md-9 text-center">
+              <div class="col-md-9 text-center">
                  <div class="form-group">
                    <input type="checkbox" name="agree_1" id="ag_1" value="제공">
                    <label class="lab_check" for="ag_1"><span class="checkbox"></span></label>
                    <a href="javascript:showPrivacyDialog();">개인정보 처리방침</a> 동의 <span class="required">(필수)</span>
                  </div>
-               </div>
-             </div>    
-             <div class="row justify-content-center mb-2">
-               <div class="col-md-4">                  
+              </div>
+            </div>    
+            <div class="row justify-content-center mb-2">
+              <div class="col-md-4">                  
                  <button class="btn btn-primary btn-block" id="email_up_send">Send</button>
-               </div>
-             </div>
-             <div class="row justify-content-center mb-6">
-               <div class="col-md-9 fs-14 text-center">                  
-                 이 사이트는 reCAPTCHA의 보호를 받으며 Google 
-                 <a href='https://policies.google.com/privacy' style='color:#333;' target='_blank'>개인 정보 보호 정책</a> 및 
-                 <a href='https://policies.google.com/terms' style='color:#333;' target='_blank'>서비스 약관</a>이 적용됩니다.</a>
-               </div>
+              </div>
+            </div>
+            <div class="row justify-content-center mb-6">
+              <div class="col-md-9 fs-14 text-center">                  
+                이 사이트는 reCAPTCHA의 보호를 받으며 Google 
+                <a href='https://policies.google.com/privacy' style='color:#333;' target='_blank'>개인 정보 보호 정책</a> 및 
+                <a href='https://policies.google.com/terms' style='color:#333;' target='_blank'>서비스 약관</a>이 적용됩니다.</a>
+              </div>
               <input type="hidden" name="form_token">
               <input type="hidden" name="form_kind" value="aplycontact">
               </div>
@@ -359,7 +279,7 @@
             <div class="col-md-5 text-center text-md-left">
               <ul class="nav">
                 <li class="nav-item"><a class="nav-link" href="//blog.naver.com/PostList.naver?blogId=jebo78&categoryNo=38&from=postList" target="_blank">블로그</a></li>
-                <li class="nav-item"><a class="nav-link" href="recruit/index.html" target="_blank">채용</a></li>
+                <li class="nav-item"><a class="nav-link" href="#" id="menu_recruit">채용</a></li>
                 <li class="nav-item"><a class="nav-link" href="javascript:showEmailPolicyDialog();">이메일무단수집거부</a></li>
               </ul>
             </div>
@@ -574,11 +494,14 @@
       </div>
     </div>    
 
+    <script src="assets/js/custom/jquery-3.2.1.min.js"></script>
     <script src="assets/js/vendor.js"></script>
     <script src="assets/js/app.js"></script>    
     <!-- 새로 작업한 JS 입니다 -->
     <script src="assets/js/custom/script.js"></script>
     <script src="assets/js/custom/aplyServices.js?v=20230917_01"></script>
+    
+    <script src="assets/js/custom/jquery.youtube-background.js?v=1.0.7"></script>
     <script>
       function showEmailPolicyDialog() {        
         $('#modal-content').load("emailpolicy.html");

@@ -1,9 +1,30 @@
+let pageFileTable = {
+	"about" : "about.html",
+	"service" : "service.html",
+	"team" : "team.html",
+	"contact" : "contact.html",
+	"recruit" : "recruit.html",
+};
+
+let isRecaptchaInit = false;
 
 $(function() {
     initPage();
 });
 
-let isRecaptchaInit = false;
+function initPage() {
+	let currentPage = "about";
+
+	let myUrl = new URL(window.location.href);	
+	if (myUrl.hash != "") currentPage = myUrl.hash.replace("#", "");
+	
+	let pageFile = getPageFile(currentPage);
+	if (pageFile == undefined) pageFile = "about.html";
+	setContent("#mainContents", pageFile);
+    setMenus();
+    setEmailContact();
+}
+
 
 function showDialog(msg, callback) {
 	$('#askModalContent').text(msg);
@@ -22,9 +43,8 @@ function showPrivacyDialog() {
 	$('#modal-3').modal('show');
 }
 
-function initPage() {
-    setMenus();
-    setEmailContact();
+function getPageFile(pageName) {
+	return pageFileTable[pageName];
 }
 
 function setMenus() {
@@ -42,6 +62,9 @@ function setMenus() {
 
     $("#menu_contact").click(function() {        
         setContent("#mainContents", "contact.html");
+    });
+     $("#menu_recruit").click(function() {        
+        setContent("#mainContents", "recruit.html");
     });
 }
 
