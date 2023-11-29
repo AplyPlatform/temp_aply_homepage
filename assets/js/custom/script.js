@@ -9,8 +9,10 @@ let pageFileTable = {
 
 let isRecaptchaInit = false;
 
-$(function() {
-	window.scrollTo({ top: 0, behavior: 'smooth' });
+$(function() {	
+	setTimeout(() => {
+		window.scrollTo({ top: 0, behavior: 'smooth' });
+	}, 100);
     initPage();
 });
 
