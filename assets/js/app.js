@@ -479,7 +479,7 @@ if ($(form_id).find('input[name="min_type_4"]').is(":checked")) {
 }
 
 if (min_type == "") {
-  showDialog("문의 종류를 선택해 주세요.");		
+  showDialog("문의 분야를 선택해 주세요.");		
   if ($('div').is('.page-loader')) {
     $('.page-loader').delay(200).fadeOut(800);
   }
@@ -514,7 +514,7 @@ if (form_email == "") {
 }
 
 if ($(form_id).find('input[name="agree_1"').length > 0 && $(form_id).find('input[name="agree_1"').is(":checked") == false) {
-  showDialog("개인정보 처리방침에 동의해주세요.");
+  showDialog("개인정보 처리방침에 동의해 주세요.");
   if ($('div').is('.page-loader')) {
     $('.page-loader').delay(200).fadeOut(800);
   }
@@ -565,7 +565,7 @@ $.ajax({
     }
 
     if (data.result == "success") {
-      showDialog("전송이 완료되었습니다. APLY가 연락 드리겠습니다.", function() {
+      showDialog("전송이 완료되었습니다. APLY가 연락드리겠습니다.", function() {
         location.href="index.html";
       });
       return;
@@ -578,7 +578,7 @@ $.ajax({
     if ($('div').is('.page-loader')) {
       $('.page-loader').delay(200).fadeOut(800);
     }
-    showDialog("죄송합니다, 일시적인 오류가 발생하였습니다. 다시 시도 부탁드립니다.");
+    showDialog("죄송합니다. 일시적인 오류가 발생하였습니다. 다시 시도해 주세요.");
   }
 });
 }
@@ -643,7 +643,7 @@ if (form_email == "") {
 }
 
 if ($(form_id).find('input[name="agree_1"').length > 0 && $(form_id).find('input[name="agree_1"').is(":checked") == false) {
-  showDialog("개인정보 처리방침에 동의해주세요.", null);
+  showDialog("개인정보 처리방침에 동의해 주세요.", null);
   return false;
 }
 
