@@ -2825,30 +2825,19 @@ input[type="button"].btn-block {
     padding-left: 0; } }
 
 @media (min-width: 576px) {
-  .navbar-expand-sm {
-    flex-flow: row nowrap;
-    justify-content: flex-start; }
-    .navbar-expand-sm .navbar-nav {
-      flex-direction: row; }
-      .navbar-expand-sm .navbar-nav .dropdown-menu {
-        position: absolute; }
-      .navbar-expand-sm .navbar-nav .nav-link {
-        padding-right: 0.5rem;
-        padding-left: 0.5rem; }
-    .navbar-expand-sm > .container,
-    .navbar-expand-sm > .container-fluid {
-      flex-wrap: nowrap; }
-    .navbar-expand-sm .navbar-collapse {
-      display: flex !important;
-      flex-basis: auto; }
-    .navbar-expand-sm .navbar-toggler {
-      display: none; } }
+  .navbar-expand-sm {flex-flow: row nowrap; justify-content: flex-start; }
+    .navbar-expand-sm .navbar-nav {flex-direction: row; }
+      .navbar-expand-sm .navbar-nav .dropdown-menu {position: absolute; }
+      .navbar-expand-sm .navbar-nav .nav-link {padding-right: 0.5rem; padding-left: 0.5rem; }
+    .navbar-expand-sm > .container, .navbar-expand-sm > .container-fluid {flex-wrap: nowrap; }
+    .navbar-expand-sm .navbar-collapse {display: flex !important; flex-basis: auto; }
+    .navbar-expand-sm .navbar-toggler {display: none; }
+      }
 
 @media (max-width: 767.98px) {
   .navbar-expand-md > .container,
-  .navbar-expand-md > .container-fluid {
-    padding-right: 0;
-    padding-left: 0; } }
+  .navbar-expand-md > .container-fluid {padding-right: 0; padding-left: 0; }
+  }
 
 @media (min-width: 768px) {
   .navbar-expand-md {
@@ -15061,28 +15050,19 @@ blockquote p {color: #000; }
   line-height: 10rem;
   margin-bottom: .25em; }
 
-.letter-spacing {
-  letter-spacing: 0.05em; }
+.letter-spacing {letter-spacing: 0.05em; }
 
 @media (max-width: 1199.98px) {
-  .display-1 {
-    font-size: 3.75rem; }
-  .display-2 {
-    font-size: 3.28125rem; }
-  .display-3 {
-    font-size: 2.8125rem; }
-  .display-4 {
-    font-size: 2.57812rem; }
-  h1, .h1 {
-    font-size: 2.34375rem; }
-  h2, .h2 {
-    font-size: 1.875rem; }
-  h3, .h3 {
-    font-size: 1.5rem; }
-  h4, .h4 {
-    font-size: 1.3125rem; }
-  h5, .h5 {
-    font-size: 1.125rem; } }
+  .display-1 {font-size: 3.75rem; }
+  .display-2 {font-size: 3.28125rem; }
+  .display-3 {font-size: 2.8125rem; }
+  .display-4 {font-size: 2.57812rem; }
+  h1, .h1 {font-size: 2.34375rem; }
+  h2, .h2 {font-size: 1.875rem; }
+  h3, .h3 {font-size: 1.5rem; }
+  h4, .h4 {font-size: 1.3125rem; }
+  h5, .h5 {font-size: 1.125rem; }
+  }
 
 header {
   -webkit-user-select: none;
@@ -15616,7 +15596,7 @@ footer .nav li {display: inline-block; }
       display: block;
       width: 20px;
       height: 2px;
-      background-color: #000;
+      background-color: #FFF;
       outline: 1px solid transparent;
       -webkit-transition-property: background-color;
       -moz-transition-property: background-color;
@@ -15786,26 +15766,19 @@ footer .nav li {display: inline-block; }
 .navbar-toggler {padding: 0 !important; border: 0; }
 
 @media (max-width: 1199.98px) {
-  .navbar-logo-dark {
-    display: block !important; }
-  .navbar .navbar-toggler {
-    padding: .5rem;
+  .navbar {padding:0;}
+  .navbar-logo-light {display: block !important; }
+  .navbar-logo-dark {display: none; }
+  .navbar .navbar-toggler {padding: .5rem;
     color: rgba(0, 0, 0, 0.5);
     border-color: rgba(0, 0, 0, 0.1);
     border-radius: 50%; }
-  .navbar .nav-item + .nav-item {
-    margin: 0; }
-  .navbar .nav-item .nav-link {
-    padding: 5px 0;
-    color: #151515; }
-    .navbar .nav-item .nav-link:focus, .navbar .nav-item .nav-link:hover {
-      color: #000; }
-  .navbar .nav-item.show .nav-link, .navbar .nav-item.active .nav-link {
-    color: #000; }
-  .navbar .banner {
-    display: none; }
-  .navbar-nav .nav-item {
-    width: 100%;
+  .navbar .nav-item + .nav-item {margin: 0; }
+  .navbar .nav-item .nav-link {padding: 5px 0; color: #151515; }
+    .navbar .nav-item .nav-link:focus, .navbar .nav-item .nav-link:hover {color: #000; }
+  .navbar .nav-item.show .nav-link, .navbar .nav-item.active .nav-link { color: #000; }
+  .navbar .banner {display: none; }
+  .navbar-nav .nav-item {width: 100%;
     padding: .5rem 0; }
     .navbar-nav .nav-item .btn {
       display: block;
@@ -19946,8 +19919,8 @@ footer .nav li {display: inline-block; }
   margin: 0; }
 
 @media (min-width: 1200px) {
-  .navbar .dropdown-menu.show {
-    animation: dropdown .2s ease forwards; } }
+  .navbar .dropdown-menu.show {animation: dropdown .2s ease forwards; }
+  }
 
 @keyframes dropdown {
   0% {
