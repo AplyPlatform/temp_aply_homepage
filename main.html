@@ -73,7 +73,7 @@
                 사용자 경험 및 콘텐츠를 분석하여 서비스와 솔루션을 디자인 합니다.</p>              
 
               <p class="lead text-dark">어플라이 팀원의 전문 역량이 필요하세요?</p>
-              <a href="?p=contact"><div class="btn btn-dark" data-aos="fade-up" data-aos-delay="50">문의하기</div></a>
+              <a href="/?p=contact"><div class="btn btn-dark" data-aos="fade-up" data-aos-delay="50">문의하기</div></a>
             </div>
           </div>         
         </div>
@@ -115,35 +115,100 @@
       <!-- / 역량 소개 2 --> 
       
       <!-- 서비스 소개 -->
-      <section>
+      <section class="bg-light section-decorated-bottom">
+        <div class="decorated-bottom text-white">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 40"  preserveAspectRatio="none">  
+            <path d="">
+              <animate 
+              attributeName="d" 
+              begin="0s" 
+              dur="5s"
+              repeatCount="indefinite"
+              values="
+              M0,0 C200,7.11236625e-15 200,40 400,40 C600,40 800,0 1000,0 L1000,50 L0,50 L0,0 Z;
+              M0,40 C200,40 400,0 600,0 C800,0 800,40 1000,40 L1000,50 L0,50 L0,40 Z;
+              M0,30 C200,30 200,0 400,0 C600,0 800,40 1000,40 L1000,50 L0,50 L0,30 Z;
+              M0,0 C200,7.11236625e-15 200,40 400,40 C600,40 800,0 1000,0 L1000,50 L0,50 L0,0 Z;"></animate>
+            </path>
+          </svg>
+        </div>
+        <div class="image image-overlay image-scrolling" style="background-image:url(assets/img/main_service_1.jpg)"
+          data--100-bottom-top="transform: translateY(0%);" 
+          data-top-bottom="transform: translateY(25%);">
+        </div>
         <div class="container">
-          <div class="row justify-content-center text-center">
-            <div class="col-10">
-              <h2 class="h2">서비스</h2>
+          <div class="row justify-content-between align-items-center">
+            <div class="col-lg-4 text-center text-lg-left text-white">
+              <h2 class="h2 font-weight-bold">서비스</h2>
               <p class="lead">AR과 AI에 특화된 APLY 기술이 여러분의 일상에 함께 합니다.</p>
+              <div class="row align-items-center justify-content-center mt-4 mb-4">
+                <div class="col-4" data-aos="zoom-in" data-aos-anchor-placement="top-center">
+                  <div class="presentation-circle presentation-circle-white">
+                    <figure style="background-image: url('assets/img/service_1.jpg')"></figure>
+                  </div>
+                  <p class="mt-1 text-center">AQR</p>
+                </div>
+                <div class="col-4" data-aos="zoom-in" data-aos-anchor-placement="top-center">
+                  <div class="presentation-circle presentation-circle-white">
+                    <figure style="background-image: url('assets/img/service_2.jpg')"></figure>
+                  </div>
+                  <p class="mt-1 text-center">APLX</p>
+                </div>
+                <div class="col-4" data-aos="zoom-in" data-aos-anchor-placement="top-center">
+                  <div class="presentation-circle presentation-circle-white">
+                    <figure style="background-image: url('assets/img/service_cover_store.jpg')"></figure>
+                  </div>
+                  <p class="mt-1 text-center">AQ 플레이트</p>
+                </div>
+              </div>
+              <a href="/?p=service"><button type="button" class="btn btn-with-ico btn-light mt-2">Learn more  <i class="icon-arrow-right2"></i></button></a>
             </div>
-          </div>
-          <div class="row justify-content-center align-items-center">
-            <div class="col-10">
+            <div class="col-lg-7 blockquote-list">
+              <blockquote class="blockquote blockquote-2 boxed" data-aos="fade-up">
+                <p>어플라이 QR 기반 송금서비스 등록계좌 1000돌파...자영업자 호응</p>
+                <footer class="blockquote-footer">AQR - 이데일리</footer>
+              </blockquote>
+              <blockquote class="blockquote blockquote-2 boxed" data-aos="fade-up">
+                <p>이번 전시는 특히 증강현실(AR) 전문 스타트업 회사 APLY와 협업을 통해, 별도의 앱을 설치할 필요 없이 작품 설명에 들어 있는 QR 코드를 스마트폰으로 스캔해 그림과 그림이 그려지기 전의 풍경, 그림 그리는 작가의 모습을 감상할 수 있습니다.</p>
+                <footer class="blockquote-footer">APLX - KBS 뉴스</footer>
+              </blockquote>
+              <blockquote class="blockquote blockquote-2 boxed" data-aos="fade-up">
+                <p>깔끔하고 잘 인식돼서 좋아요<br />예쁘고 깔끔해요 편리하게 사용하기 좋은거 같아요</p>
+                <footer class="blockquote-footer">AQR 플레이트 - 네이버 스마트 스토어 리뷰</footer>
+              </blockquote>
             </div>
           </div>
         </div>
       </section>
+      <!-- / 서비스 소개 -->
       
-      <!-- 회사 소개 -->
-      <section class="bg-white">
+      <!-- 회사 소개 -->      
+      <section class="py-0">
         <div class="container">
-          <div class="row justify-content-center text-center">
-            <div class="col-10">
-              <h2 class="h2">APLY</h2>
-              <p class="lead">Advanced platform to fly<br />APLY는 즐겁게 일하는 진보된 플랫폼입니다.</p>
+          <div class="row justify-content-center">
+            <div class="col-lg-12">
+              <div class="row separated">
+                <div class="col-lg-6 py-8 pr-md-10">                  
+                  <h2 class="h2">APLY</h2>
+                  <p class="lead">Advanced platform to fly<br />APLY는 즐겁게 일하는 진보된 플랫폼입니다.</p>
+                  <a href="/?p=about"><button type="button" class="btn btn-with-ico btn-dark mt-2" data-aos="fade-up" data-aos-delay="30">Learn more  <i class="icon-arrow-right2"></i></button></a>
+                </div>
+                <div class="col-lg-6 py-8 pl-md-10 text-left">
+                  <h4 class="font-weight-normal mb-2">Our Story</h4>
+                  <p class="text-dark mb-0">Vision, AR, Big Data, AI</p>
+                  <p>
+                    데이터를 이해하고 가치를 발굴하며 인공지능을 디자인합니다.<br />
+                    데이터 분석/이상탐지(Anomaly Detection)/AR 기술을 기반으로 문제를 간편하게 확인하고 인사이트를 얻을 수 있는 방법을 제공합니다.
+                  </p>
+                  <p class="text-dark mb-0">Software and Hardware</p>
+                  <p>최신 기술과 트렌드를 끊임없이 학습하고 문제와 요구사항을 정확하게 이해하여 편리하게 사용할 수 있는 소프트웨어를 개발합니다.</p>
+                  <a href="/?p=recruit"><div class="btn btn-sm btn-dark" data-aos="fade-up" data-aos-delay="50">채용 문의</div></a> 
+                </div>
+              </div>
             </div>
-          </div>  
-          <div class="row justify-content-center align-items-center">
-            <a href="?p=recruit"><div class="btn btn-lg btn-dark" data-aos="fade-up" data-aos-delay="50">채용 문의</div></a>
           </div>
         </div>
-      </section>
+      </section> 
       
       <!-- partners -->
       <section class="separator-top">
