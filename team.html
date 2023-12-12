@@ -102,33 +102,93 @@
        </div>
      </section>
      
-     <!-- Portfolio carousel -->
-     <section class="bg-light">
+     <!-- Portfolio -->
+     <section class="bg-light separator-bottom">
        <div class="container">
-         <div class="row">
-           <div class="col-lg-4">
-             <h2>Portfolio</h2>
+         <div class="row justify-content-between">
+           <div class="col-12 col-lg-4 align-self-center text-center text-md-left">
+             <h2 class="h1">We do <br /><span id="typed"></span></h2>
+             <div id="typed-strings">
+               <p>developing.</p>
+               <p>designing.</p>
+               <p>consulting.</p>
+             </div>      
            </div>
-           <div class="col-lg-6">
-             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae esse rem nesciunt quos, porro ratione reprehenderit unde fuga commodi incidunt fugiat iure omnis eaque autem animi nemo explicabo cum earum.</p>
-           </div>
+           
+           <div class="col-12 col-lg-7 scrolling-gallery" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+             <div data-bottom-top="transform: translateY(0px);" data-top-bottom="transform: translateY(-1000px);">
+               <ul class="masonry gallery gutter-1 gutter-md-2">
+                 <li class="col-6">
+                   <figure class="photo">
+                     <img src="assets/img/team_portfolio_1.jpg" alt="APLY">
+                   </figure>
+                 </li>
+                 <li class="col-6">
+                   <figure class="photo">
+                     <img src="assets/img/team_portfolio_2.jpg" alt="APLY">
+                   </figure>
+                 </li>
+                 <li class="col-6">
+                   <figure class="photo">
+                     <img src="assets/img/team_portfolio_3.jpg" alt="APLY">
+                   </figure>
+                 </li>
+                 <li class="col-6">
+                   <figure class="photo">
+                     <img src="assets/img/team_portfolio_4.jpg" alt="APLY">
+                   </figure>
+                 </li>
+                 <li class="col-6">
+                   <figure class="photo">
+                     <img src="assets/img/team_portfolio_1.jpg" alt="APLY">
+                   </figure>
+                 </li>
+                 <li class="col-6">
+                   <figure class="photo">
+                     <img src="assets/img/team_portfolio_2.jpg" alt="APLY">
+                   </figure>
+                 </li>
+               </ul>
+             </div>
+           </div>          
          </div>
-         <div class="row" data-aos="fade-left">
-           <div class="col">
-             <div class="owl-carousel visible" data-items="[3]" data-nav="true" data-margin="10">
-               <figure class="user">
-                 <a href="" class="user-photo">
-                  <img src="assets/img/team_portfolio-1.jpg" alt="APLY">
-                 </a>
-                 <figcaption class="user-caption">
-                   <h4>Nicole Doe</h4>
-                   <span>Head of Experience Design</span>
-                   <ul class="socials bordered">
-                     <li><a href="" class="icon-facebook fs-20"></a></li>
-                     <li><a href="" class="icon-instagram fs-20"></a></li>
-                   </ul>
-                 </figcaption>
-               </figure>
+       </div>
+     </section>  
+     <section class="bg-light">
+       <div class="container">         
+         <div class="row justify-content-center">
+           <div class="col-md-10 col-lg-8">
+             <div class="owl-carousel visible accent" data-dots="true" data-loop="true" data-margin="100" data-autoplay="true">
+               <blockquote class="blockquote blockquote-1">
+                 <p>증강현실/DJI MSDK 기반 드론 영상 모니터링 SW 개발</p>
+                 <footer class="blockquote-footer">
+                   <div class="media align-items-center">
+                     <div class="media-body ml-2">
+                       <span class="d-block mb-0 text-black">D 방위사업기업</span>
+                     </div>
+                   </div>
+                 </footer>
+               </blockquote>
+               <blockquote class="blockquote blockquote-1">
+                 <p>DJI Cloud API 기반 드론 상태 모니터링 SW</p>
+                 <footer class="blockquote-footer">
+                   <div class="media align-items-center">
+                     <div class="media-body ml-2">
+                       <span class="d-block mb-0 text-black">T 방위사업기업</span>
+                     </div>
+                   </div>
+                 </footer>
+               </blockquote>
+               <blockquote class="blockquote blockquote-1">
+                 <p>QGroundControl 기반 GCS 및 드론스테이션 제어 시스템 개발</p>
+                 <footer class="blockquote-footer">
+                   <div class="media align-items-center">
+                     <div class="media-body ml-2">
+                       <span class="d-block mb-0 text-black">D 기업</span>
+                     </div>
+                   </div>
+                 </footer>
+               </blockquote>
              </div>
            </div>
          </div>
