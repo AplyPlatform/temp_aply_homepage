@@ -15446,12 +15446,7 @@ footer .nav li {display: inline-block; }
 .overlay {background: rgba(0, 0, 0, 0.1); }
 .overlay-active {overflow: hidden; }
 
-.burger {
-  display: inline-block;
-  position: relative;
-  width: 60px;
-  height: 60px;
-  z-index: 100; }
+.burger {display: inline-block; position: relative; width: 60px; height: 60px; z-index: 100;}
   .burger span {
     position: relative;
     margin-top: 6px;
@@ -15482,15 +15477,10 @@ footer .nav li {display: inline-block; }
       -o-transition-duration: 0.3s;
       transition-duration: 0.3s;
       transition-duration: 0.3s; }
-    .burger span::before, .burger span::after {
-      position: absolute;
-      content: ""; }
-    .burger span::before {
-      top: -6px; }
-    .burger span::after {
-      top: 6px; }
-  .burger.clicked span {
-    background-color: transparent; }
+    .burger span::before, .burger span::after {position: absolute;  content: ""; }
+    .burger span::before {top: -6px; }
+    .burger span::after {top: 6px; }
+  .burger.clicked span {background-color: transparent; }
   .burger.clicked span::before {
     -webkit-transform: translateY(6px) rotate(45deg);
     -moz-transform: translateY(6px) rotate(45deg);
@@ -15505,16 +15495,14 @@ footer .nav li {display: inline-block; }
     -o-transform: translateY(-6px) rotate(-45deg);
     transform: translateY(-6px) rotate(-45deg);
     transform: translateY(-6px) rotate(-45deg); }
-  .burger.clicked span:before, .burger.clicked span:after {
-    background-color: #000; }
+  .burger.clicked span:before, .burger.clicked span:after {background-color: #FFF; }
   .burger.burger-dot {
     -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.05);
     -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.05);
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.05);
     background: #fff;
     border-radius: 50%; }
-  .burger:hover {
-    cursor: pointer; }
+  .burger:hover {cursor: pointer; }
 
 .overlay-menu {
   -webkit-transition: all 0.5s;
@@ -15541,12 +15529,8 @@ footer .nav li {display: inline-block; }
     transform: translate(0, 0);
     visibility: visible; }
 
-.overlay-nav {
-  list-style: none;
-  padding: 0; }
-  .overlay-nav a {
-    font-size: 30px;
-    line-height: 2em; }
+.overlay-nav {list-style: none; padding: 0; }
+.overlay-nav a {font-size: 30px;line-height: 2em; }
 
 .wrapper {
   -webkit-transition: all 0.5s;
@@ -15643,10 +15627,7 @@ footer .nav li {display: inline-block; }
   .navbar {padding:0;}
   .navbar-logo-light {display: block !important; }
   .navbar-logo-dark {display: none; }
-  .navbar .navbar-toggler {padding: .5rem;
-    color: rgba(0, 0, 0, 0.5);
-    border-color: rgba(0, 0, 0, 0.1);
-    border-radius: 50%; }
+  .navbar .navbar-toggler {padding: .5rem; color: rgba(0, 0, 0, 0.5); border-color: rgba(0, 0, 0, 0.1); border-radius: 50%; }
   .navbar .nav-item + .nav-item {margin: 0; }
   .navbar .nav-item .nav-link {padding: 5px 0; color: #FFF; }
   .navbar .nav-item .nav-link:focus, .navbar .nav-item .nav-link:hover {color: #000; }
